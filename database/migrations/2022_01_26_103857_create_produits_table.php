@@ -19,6 +19,7 @@ class CreateProduitsTable extends Migration
             $table->string('Description');
             $table->double('Prix');
             $table->string('Image');
+            $table->foreignId('id_category_produit')->references('id_categorie_produit')->on('categorie_produits');
             $table->timestamps();
         });
     }
