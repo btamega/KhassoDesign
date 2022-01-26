@@ -202,9 +202,9 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-													<li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{URL::to('/')}}">Home</a></li>
-													<li class="{{ (request()->is('produits*')) ? 'active' : '' }}" ><a href="{{URL::to('/produits')}}">Product</a></li>												
-													<li class="{{ (request()->is('services*')) ? 'active' : '' }}" ><a href="{{URL::to('/services')}}">Service</a></li>
+													<li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{URL::to('/')}}">Accueil</a></li>
+													<li class="{{ (request()->is('produits*')) ? 'active' : '' }}" ><a href="{{URL::to('/produits')}}">Produits</a></li>												
+													<li class="{{ (request()->is('services*')) ? 'active' : '' }}" ><a href="{{URL::to('/services')}}">Services</a></li>
 													<li class="{{ (request()->is('shop*')) ? 'active' : '' }}" ><a href="{{URL::to('/shop')}}">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
 															<li><a href="{{URL::to('/cart')}}">Cart</a></li>
@@ -217,7 +217,8 @@
 															<li><a href="{{URL::to('/blog-single-sidebar')}}">Blog Single Sidebar</a></li>
 														</ul>
 													</li>
-													<li class="{{ (request()->is('contact*')) ? 'active' : '' }}"><a href="{{URL::to('/contact')}}">Contact Us</a></li>
+													<li class="{{ (request()->is('contact*')) ? 'active' : '' }}"><a href="{{URL::to('/contact')}}">Contact</a></li>
+													
 												</ul>
 										</div>
 									</div>

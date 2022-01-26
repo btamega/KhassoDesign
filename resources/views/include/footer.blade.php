@@ -46,11 +46,10 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer social">
-                        <h4>Get In Tuch</h4>
+                        <h4>KhassoDesign</h4>
                         <!-- Single Widget -->
                         <div class="contact">
                             <ul>
-                                <li>NO. 342 - London Oxford Street.</li>
                                 <li>France</li>
                                 <li>karecherif2000@gmail.com</li>
                                 <li>+33 6 05 70 39 20</li>

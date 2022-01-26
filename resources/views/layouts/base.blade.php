@@ -47,9 +47,6 @@
 	<script src="{{asset("test/js/popper.min.js")}}"></script>
 	<!-- Bootstrap JS -->
 	<script src="{{asset("test/js/bootstrap.min.js")}}"></script>
-	<!-- Color JS -->
-	<script src="{{asset("test/js/colors.js")}}"></script>
-	<!-- Slicknav JS -->
 	<script src="{{asset("test/js/slicknav.min.js")}}"></script>
 	<!-- Owl Carousel JS -->
 	<script src="{{asset("test/js/owl-carousel.js")}}"></script>

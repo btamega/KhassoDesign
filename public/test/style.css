@@ -377,10 +377,7 @@ Version:1.0
 .header.shop .topbar .login a {
 	color: #F7941D;
 }
-/* Topbar Left Nav */
-.header.shop .left-nav{
-	
-}
+
 .header.shop .top-left .list-main li:first-child{
 	padding-left:0;
 }
@@ -690,7 +687,7 @@ Version:1.0
 }
 .header.shop .search-bar form {
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: 260px;
 }
 .header.shop .search-bar input {
@@ -776,6 +773,7 @@ Version:1.0
 	margin-right: 15px;
 	font-size: 22px;
 }
+
 .header.shop .main-category {
 	position: absolute;
 	left: 0;
@@ -805,7 +803,7 @@ Version:1.0
 }
 .header.shop .main-category li a i{
 	display:inline-block;
-	float:right;
+	/* float:right; */
 }
 .header.shop .sub-category {
 	background: #fff;
@@ -911,7 +909,7 @@ Version:1.0
 .header.shop .menu-origin {
 	float:none;
 	display: inline-block;
-	float: right;
+	/* float: right; */
 }
 .header.shop .nav li {
 	margin-right: 40px;
@@ -1022,7 +1020,7 @@ Version:1.0
 	padding: 0;
 	margin: 0;
 	top: 20px;
-	float: right;
+	/* float: right; */
 	position: relative;
 }
 .header.shop .right-bar .sinlge-bar.top-search a {
@@ -1141,7 +1139,7 @@ Version:1.0
 	width:100%;
 	z-index:999;
 }
-.header.sticky .all-category{}
+
 .header.sticky .all-category h3{
 	cursor:pointer;
 	
@@ -1319,7 +1317,7 @@ Version:1.0
 .hero-area2 .single-slider .content .des{
 	color:#fff;
 }
-.hero-area2 .single-slider .content .button{}
+
 .hero-area2 .single-slider .content .button .btn {
 	padding: 9px 25px;
 	border: 2px solid #fff;
@@ -1366,8 +1364,6 @@ Version:1.0
 .hero-area2 .owl-carousel .owl-controls .owl-nav .owl-next{
 	right:0;
 }
-/* Hero Area 3 */
-.hero-area3{}
 .hero-area3 .big-content{
 	background-image: url('https://via.placeholder.com/850x530');
 	background-size: cover;
