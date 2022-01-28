@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CommentairesController;
 use App\Http\Controllers\SignUpController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,12 +44,13 @@ Route::get('/login', function () {
 Route::get('/signUp', function () {
     return view('Auth/signUp');
 });
-Route::post('/Auth/login', [SignUpController::class, 'store']);
+Route::post('/register', [UserController::class, 'store']);
+Route::post('/authenticate', [LoginController::class, 'authenticate']);
+Route::post('/mail', [CommentairesController::class, 'index']);
+
 Route::get("/admin/site/mitfarm", "App\Http\Controllers\home@adminsite")->name('admin/site/mitfarm');
 
 Route::get("about", "App\Http\Controllers\home@about")->name('about');
-
-// Route::get("/", "App\Http\Controllers\home@index1")->name('home');
 
 Route::get("Contact-us", "App\Http\Controllers\home@Contackus")->name('Contackus');
 

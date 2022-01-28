@@ -9,7 +9,12 @@ background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
 }
-
+/* @media screen and (max-width: 300px) {
+    .card{
+      height: 500px;
+      width: 700px;
+    }
+  } */
 .container{
 height: 100%;
 align-content: center;

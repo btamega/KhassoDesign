@@ -24,35 +24,42 @@
 			<div class="card-header">
 				<h3>Se connecter</h3>
 				<div class="d-flex justify-content-end social_icon">
-					<span><a style="color: #FFC312" href="#"><i class="fab fa-facebook-square"></i></a></span>
+					<span><a style="color: #FFC312" target="_blank" href="https://web.facebook.com/Khassodesign-112125716933890"><i class="fab fa-facebook-square"></i></a></span>
 					<span><a style="color: #FFC312" href="#"><i class="fab fa-google-plus-square"></i></a></span>
 					<span><a style="color: #FFC312" href="#"><i class="fab fa-twitter-square"></i></a></span>
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				@if(Session::has('alert'))
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>{{ Session::get('alert') }}</strong> 
+                </div>
+            	@endif
+				<form method="POST" action="authenticate">
+					@csrf
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" class="form-control" name="email" placeholder="Email" required>
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" name="password" placeholder="password" required>
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Connexion" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
-			<div class="card-footer">
+			<div style="margin-top: -24px" class="card-footer">
 				<div class="d-flex justify-content-center links">
 					Don't have an account?<a href="{{URL::to('/signUp')}}">Sign Up</a>
 				</div>

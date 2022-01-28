@@ -18,36 +18,43 @@ KhassoDesign | Contact
 								<h4>KhassoDesign</h4>
 								<h3>Nous contacter</h3>
 							</div>
-							<form class="form" method="post" action="mail/mail.php">
+							<form class="form" method="post" action="/mail">
+								@csrf
+								@if(Session::has('success'))
+									<div class="alert alert-success">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+									<strong>{{ Session::get('success') }}</strong> 
+									</div>
+								@endif
 								<div class="row">
 									<div class="col-lg-6 col-12">
 										<div class="form-group">
 											<label>Nom<span>*</span></label>
-											<input name="name" type="text" placeholder="">
+											<input name="name" type="text" placeholder="" required>
 										</div>
 									</div>
 									<div class="col-lg-6 col-12">
 										<div class="form-group">
-											<label>Sujet<span>*</span></label>
-											<input name="subject" type="text" placeholder="">
+											<label>Prenom<span>*</span></label>
+											<input name="prenom" type="text" placeholder="" required>
 										</div>
 									</div>
 									<div class="col-lg-6 col-12">
 										<div class="form-group">
 											<label>Email<span>*</span></label>
-											<input name="email" type="email" placeholder="">
+											<input name="email" type="email" placeholder="" required>
 										</div>	
 									</div>
 									<div class="col-lg-6 col-12">
 										<div class="form-group">
 											<label>Téléphone<span>*</span></label>
-											<input name="company_name" type="text" placeholder="">
+											<input name="phone" type="text" placeholder="" required>
 										</div>	
 									</div>
 									<div class="col-12">
 										<div class="form-group message">
 											<label>Message<span>*</span></label>
-											<textarea name="message" placeholder=""></textarea>
+											<textarea name="message" placeholder="" required></textarea>
 										</div>
 									</div>
 									<div class="col-12">
@@ -57,6 +64,7 @@ KhassoDesign | Contact
 									</div>
 								</div>
 							</form>
+							
 						</div>
 					</div>
 					<div class="col-lg-4 col-12">

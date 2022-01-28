@@ -59,58 +59,59 @@
         	<h3 class="panel-title">Registration Form</h3>
 	</div>
     <div class="panel-body">
-        <form method="post" action="Auth/login">
+        <form method="post" action="register">
             @csrf
             <div class="col-md-12 col-sm-12">
                 <div class="form-group col-md-6 col-sm-6">
                         <label for="name">Nom*	</label>
-                        <input type="text" class="form-control input-sm" id="name" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="name" id="name" required placeholder="">
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="name">Prénom*	</label>
-                        <input type="text" class="form-control input-sm" id="prenom" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="prenom" id="prenom" required placeholder="">
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="email">Email*</label>
-                        <input type="email" class="form-control input-sm" id="email" required placeholder="">
+                        <input type="email" class="form-control input-sm"  name="email" id="email" required placeholder="">
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="email">Password*</label>
-                        <input type="password" class="form-control input-sm" id="password" required placeholder="">
+                        <input type="password" class="form-control input-sm" name="password" id="password" required placeholder="">
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="email">Confirm password*</label>
-                        <input type="password" class="form-control input-sm" id="Confirmpassword" required placeholder="">
+                        <input type="password" class="form-control input-sm" name="Confirmpassword" id="Confirmpassword" required placeholder="">
                     </div>
 
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="mobile">Téléphone*</label>
-                        <input type="text" class="form-control input-sm" id="mobile" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="mobile" id="mobile" required placeholder="">
                     </div>
 
                 <div class="form-group col-md-6 col-sm-6">
                     <label for="address">Addresse*</label>
-                    <textarea class="form-control input-sm" id="address" rows="3"></textarea>
+                    <textarea class="form-control input-sm" name="address" id="address" rows="3"></textarea>
                 </div>
                 
                 <div class="form-group col-md-6 col-sm-6">
                         <label for="city">Ville*</label>
-                        <input type="text" class="form-control input-sm" id="city" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="city" id="city" required placeholder="">
                     </div>
                 <div class="form-group col-md-6 col-sm-6">
                         <label for="country">Pays*</label>
-                        <input type="text" class="form-control input-sm" id="country" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="country" id="country" required placeholder="">
                     </div>
 
                 <div class="form-group col-md-6 col-sm-6">
                         <label for="pincode">Code Postal</label>
-                        <input type="text" class="form-control input-sm" id="pincode" required placeholder="">
+                        <input type="text" class="form-control input-sm" name="pincode" id="pincode" required placeholder="">
                     </div>
                 <div class="col-md-12 col-sm-12">
                 <div class="form-group col-md-3 col-sm-3 pull-right" >
                     <input type="submit" class="btn btn-primary" value="Submit"/>
                 </div>
             </div>
+            
         </form>
     </div>
 </body>
