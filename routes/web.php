@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SignUpController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,13 @@ Route::get('/services', function () {
 Route::get('/blog', function () {
     return view('test/blog-single-sidebar');
 });
+Route::get('/login', function () {
+    return view('Auth/login');
+});
+Route::get('/signUp', function () {
+    return view('Auth/signUp');
+});
+Route::post('/Auth/login', [SignUpController::class, 'store']);
 Route::get("/admin/site/mitfarm", "App\Http\Controllers\home@adminsite")->name('admin/site/mitfarm');
 
 Route::get("about", "App\Http\Controllers\home@about")->name('about');
